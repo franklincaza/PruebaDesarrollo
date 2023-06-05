@@ -1,0 +1,84 @@
+{%extends 'base.html' %}
+{% block title %} >API Documentation {% endblock  %}
+{% block content %}
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+        
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>
+
+
+
+    <h1>API Documentation</h1>
+
+    <h2>Endpoint: /</h2>
+    <h3>Método: GET</h3>
+    <p>Renderiza la página de inicio.</p>
+    <h4>Parámetros de entrada</h4>
+    <p>No se requieren parámetros.</p>
+    <h4>Respuesta</h4>
+    <p>Devuelve la página de inicio renderizada en HTML.</p>
+
+    <h2>Endpoint: /BASE_DE_DATOS</h2>
+    <h3>Método: GET</h3>
+    <p>Renderiza la página de reportes.</p>
+    <h4>Parámetros de entrada</h4>
+    <p>No se requieren parámetros.</p>
+    <h4>Respuesta</h4>
+    <p>Devuelve la página de reportes renderizada en HTML con los datos de las tablas <code>Dt_llamadas</code>, <code>Dt_gestionAsesor</code>, <code>Dt_Usuarios</code>, <code>Dt_CantLLAMADAS</code> y <code>Dt_Comision</code>.</p>
+
+    <h2>Endpoint: /RPA</h2>
+    <h3>Método: GET</h3>
+    <p>Renderiza la página de RPA.</p>
+    <h4>Parámetros de entrada</h4>
+    <p>No se requieren parámetros.</p>
+    <h4>Respuesta</h4>
+    <p>Devuelve la página de RPA renderizada en HTML.</p>
+
+    <h2>Endpoint: /1</h2>
+    <h3>Método: GET, POST</h3>
+    <p>Renderiza la página de inicio después de realizar una acción de RPA.</p>
+    <h4>Parámetros de entrada</h4>
+    <p>No se requieren parámetros.</p>
+    <h4>Respuesta</h4>
+    <p>Devuelve la página de inicio renderizada en HTML.</p>
+    <h3>Método: POST</h3>
+    <p>Realiza una acción de RPA.</p>
+    <h4>Parámetros de entrada</h4>
+    <p>No se requieren parámetros.</p>
+    <h4>Respuesta</h4>
+    <p>No se devuelve ninguna respuesta explícita.</p>
+</body>
+</html>
+{% endblock  %}

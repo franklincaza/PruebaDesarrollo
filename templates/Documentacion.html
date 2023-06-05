@@ -1,0 +1,134 @@
+{%extends 'base.html' %}
+{% block title %} 2.	PRUEBA DE BASE DE DATOS {% endblock  %}
+{% block content %}
+
+    
+<div class="card">
+    <div class="card-header">
+        Documentacion
+    </div>
+                      
+                      <style>
+                        body {
+                            background-color: #f9f9f9;
+                            font-family: Arial, sans-serif;
+                            margin: 20px;
+                        }
+                        
+                        h1 {
+                            color: #333;
+                            font-size: 24px;
+                        }
+                        
+                        h2 {
+                            color: #666;
+                            font-size: 18px;
+                        }
+                        
+                        p {
+                            color: #999;
+                            font-size: 14px;
+                        }
+                        
+                        code {
+                            background-color: #f1f1f1;
+                            color: #333;
+                            padding: 2px 4px;
+                            border-radius: 4px;
+                            font-size: 12px;
+                        }
+                        
+                        .endpoint {
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .method {
+                            color: #333;
+                            font-weight: bold;
+                        }
+                        
+                        .endpoint-description {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .parameters {
+                            margin-top: 10px;
+                            margin-left: 20px;
+                        }
+                        
+                        .response {
+                            margin-top: 10px;
+                            margin-left: 20px;
+                        }
+                    </style>
+                
+                <body>
+                    <h1>API REST Documentation</h1>
+                    
+                    <div class="endpoint">
+                        <h2>Punto final: /</h2>
+                        <div class="endpoint-description">
+                            <p>GET /</p>
+                            <p>Renderiza la plantilla "Index.html".</p>
+                        </div>
+                        <div class="response">
+                            <p>Tipo de respuesta: HTML</p>
+                            <p>Cuerpo de respuesta: Contenido renderizado de "Index.html"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="endpoint">
+                        <h2>Punto final: /BASE_DE_DATOS</h2>
+                        <div class="endpoint-description">
+                            <p>GET /BASE_DE_DATOS</p>
+                            <p>Renderiza la plantilla "Reportes.html" y pasa los datos de los modelos <code>Dt_llamadas</code>, <code>Dt_gestionAsesor</code>, <code>Dt_Usuarios</code>, <code>Dt_CantLLAMADAS</code> y <code>Dt_Comision</code> a la plantilla.</p>
+                        </div>
+                        <div class="response">
+                            <p>Tipo de respuesta: HTML</p>
+                            <p>Cuerpo de respuesta: Contenido renderizado de "Reportes.html" con los datos de los modelos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="endpoint">
+                        <h2>Punto final: /RPA</h2>
+                        <div class="endpoint-description">
+                            <p>GET /RPA</p>
+                            <p>Renderiza la plantilla "RPA.html".</p>
+                        </div>
+                        <div class="response">
+                            <p>Tipo de respuesta: HTML</p>
+                            <p>Cuerpo de respuesta: Contenido renderizado de "RPA.html"</p>
+                        </div>
+                    </div>
+
+
+                    <div class="endpoint">
+                        <h2>Punto final: /lauchRPA</h2>
+                        <div class="endpoint-description">
+                            <p>GET /lauchRPA</p>
+                            <p>POST /lauchRPA</p>
+                            <p>Ejecuta el robot por medio de GET </p>
+                
+
+                                <div class="card-body">
+                                  <blockquote class="blockquote mb-0">
+                                    <p>
+                                      
+                                      <br>
+                        
+    
+    
+    
+                    </p>
+                    <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+                  </blockquote>
+                </div>
+              </div>      
+
+
+
+
+
+           
+            {% endblock  %}

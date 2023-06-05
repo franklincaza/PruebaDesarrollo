@@ -1,0 +1,235 @@
+{%extends 'base.html' %}
+{% block title %} Inicio {% endblock  %}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        1.	PRUEBA DE DESARROLLO
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>
+
+           
+            <img src="https://alphasec.io/content/images/2023/02/image-3.png" class="img-fluid" width="50%" height="80%" >
+            <br><br><br>
+
+            1. Crear el modelo entidad-relación: Puedes utilizar un ORM (Object-Relational Mapping
+            ) como SQLAlchemy para definir y relacionar las entidades en tu base de datos.
+            <br>
+            2. Script de ejecución de la base de datos: Puedes utilizar Oracle o SQL como motores
+             de base de datos .
+             <br>
+            3. Relación entre productos y proveedores: Puedes utilizar una relación de clave foránea en 
+            la tabla de productos para referenciar a un proveedor. Puedes definir un campo de cantidad 
+            disponible en la tabla de productos y verificarlo antes de realizar una venta.
+            <br>
+            4. Roles de administrador y usuario: Puedes implementar la autenticación y autorización utilizando
+             JWT. Para esto, puedes usar la extensión Flask-JWT-Extended.
+             <br>
+            5. CRUD para cada entidad: Puedes crear rutas en tu API para realizar las operaciones CRUD 
+            (Crear, Leer, Actualizar, Eliminar) para cada entidad. Utiliza los métodos HTTP correspondientes (POST, GET, PUT, DELETE) en Flask.
+            <br>
+            6. Borrados lógicos: Puedes agregar un campo booleano "borrado" en cada entidad y establecerlo en
+             verdadero en lugar de eliminar físicamente los registros.
+             <br>
+            7. Arquitectura de tres capas: Puedes estructurar tu proyecto en tres capas: controladores
+             (para manejar las solicitudes HTTP y llamar a los servicios correspondientes), servicios (para implementar la lógica de negocio) y repositorios (para interactuar con la base de datos). Puedes utilizar la extensión Flask-RESTful para facilitar la creación de los controladores.
+             <br>
+            8. Inyección de dependencias: Puedes utilizar la extensión Flask-DI para implementar la
+             inyección de dependencias en tu aplicación Flask.
+             <br>
+            9. Documentación con OpenAPI y Swagger: Puedes utilizar la extensión Flask-RESTx para generar automáticamente
+             la documentación OpenAPI y Swagger para tu API.
+             <br>
+            Estas son solo algunas recomendaciones para implementar una API REST en Python utilizando Flask. Recuerda que
+             puedes adaptar y personalizar estas sugerencias según tus necesidades específicas.
+
+
+
+
+        </p>
+        <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+        2.	PRUEBA DE BASE DE DATOS
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>
+
+            Crear el modelo entidad relación para el ejercicio anterior (Compartir script de despliegue)
+            Modelo entidad relación para ejercicios de consulta
+            <br>  
+            Tener en cuenta para los ejercicios de consulta:
+            <br> 
+            •	Correr cada script como se comparte en el adjunto SQL
+            <br> 
+            •	Cargar la data compartida en el adjunto SQL
+            <br> 
+            •	Generar las consultas que se presentan a continuación basándose en el MER anterior
+            <br> 
+            •	Adjuntar al final los SQL generados
+            <br> 
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvMLR2Kcm-akDOH8OkFWBOs4O_27XVz00H1A&usqp=CAU"
+             class="img-fluid" width="50%" height="80%" >
+            
+            
+            
+            <br> 
+            Consultas:
+            <br> 
+            •	Top 5 de mayor a menor de las cantidades de llamadas aprobadas por mes<br> 
+            •	Cantidad de llamadas por estados que no hayan sido gestionadas por asesores<br> 
+            •	Nombre, apellidos y edad para el mejor vendedor del año<br> 
+            •	Cantidad de llamadas realizadas por cada mes a partir de 01/06/2022 para el mejor vendedor del año, con el siguiente encabezado: ID_USUARIO, NOMBRE_APELLIDOS, EMAL, CARGO, SALARIO, MES, CANTIDAD DE LLAMADAS<br> 
+            •	Generar el salario a pagar a cada asesor para el mes de agosto, donde cada llamada aprobada tiene una bonificación del 0.01% sobre su sueldo básico<br> 
+            •	Crear un trigger que se ejecute al crear un nuevo registro en la tabla T_LLAMADA y guarde el correspondiente historial en la tabla T_LLAMADA_HIS<br> 
+            
+            
+            
+    
+
+
+        </p>
+        <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+        3.	Prueba RPA Selenium
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>
+            <br>
+            <img src="data:image/png;base64,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"  class="img-fluid" width="50%" height="50%"  >
+            <br>
+ Crear una aplicación de consola que corra un proceso automatico y 
+ gestione la página por medio de selenium web driver (Chrome o Fierefox), 
+ accediendo a cada control en el DOM del HTML, la información se debe obtener de
+  la ApiRest del punto 1(Prueba de desarrollo), se debe gestionar la página que 
+  expone Swagger; capturar solo las ventas y el detalle de cada una y registrarlas en un archivo .txt <br>
+
+Tener en cuenta para el ejercicio:<br>
+
+•	Se debe generar un archivo .txt por día<br>
+•	El proceso debe correr cada 5 minutos<br>
+•	No se deben duplicar registros<br>
+•	La aplicación de consola puede ser python<br>
+•	Aplicar principios y patrones de diseño <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    
+
+
+        </p>
+        <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+
+
+
+  <div class="card">
+    <div class="card-header">
+        4.	GitLab
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>
+
+           
+            <img src="data:image/jpeg;base64,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" class="img-fluid" width="50%" height="80%" >
+            <br><br><br>
+
+            La prueba se debe alojar en uno de los repositorios públicos de GitLab Emergia compartidos 
+            por la persona que hace el contacto en selección <br>
+
+          Para la prueba tener en cuenta las siguientes recomendaciones: <br>
+
+•	Seguir el flujo de git (GitFlow) que se muestra en la imagen<br>
+•	Desglosar actividades los mejor posible antes de crear el feature brach<br>
+•	A master sólo se integran releases y hotfixes<br>
+•	Etiquetar cada que se integre con master<br>
+•	Usar versionado semántico<br>
+•	Una vez combinada la rama release o hotfix con master se debe eliminar la rama de origen<br>
+
+
+            
+
+
+
+        </p>
+        <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+
+{% endblock  %}
+    

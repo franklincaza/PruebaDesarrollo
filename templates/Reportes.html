@@ -1,0 +1,268 @@
+{%extends 'base.html' %}
+{% block title %} 2.	PRUEBA DE BASE DE DATOS {% endblock  %}
+{% block content %}
+
+   
+
+<!– • Top 5 de mayor a menor de las cantidades de llamadas aprobadas por mes–>
+          <div class="card">
+            <div class="card-header">
+                PRUEBA DE BASE DE DATOS
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                    •	Top 5 de mayor a menor de las cantidades de llamadas aprobadas por mes <br><br>
+                    
+                        <h4>Reporte TOP 5 por mes.</h4>
+
+
+                        <table id="Pregunta_1" name="Pregunta_1"  class="table table-striped table-bordered">
+
+                            <tr>
+                          
+                              <th>Mes</th>
+                          
+                              <th>Ventas</th>
+                          
+                          
+                            </tr>
+                          
+                            <tr>
+                                {% for datos in dato %}
+                              <td>{{datos.Mes}}</td>
+                          
+                              <td>{{datos.Ventas}}</td>
+                          
+                            
+                          
+                            </tr>
+                          
+                           
+                            {% endfor%}
+                          
+                          
+                          </table>
+
+                </p>
+                <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>          
+ <!– • 	Cantidad de llamadas por estados que no hayan sido gestionadas por asesores –>
+          <div class="card">
+            <div class="card-header">
+            
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                    •	Cantidad de llamadas por estados que no hayan sido gestionadas por asesores <br><br>
+                    
+                        <h4>Reporte por asesores.</h4>
+
+
+                        <table id="Pregunta_2" name="Pregunta_2"  class="table table-striped table-bordered">
+
+                            <tr>
+                          
+                              <th>Notas</th>
+                              <th>Ventas</th>
+                             
+                          
+                          
+                            </tr>
+                          
+                            <tr>
+                                {% for gestors in gestor %}
+                              <td>{{gestors.Notas}}</td>
+                              <td>{{gestors.Ventas}}</td>
+                              
+                          
+                            
+                          
+                            </tr>
+                          
+                          
+                            {% endfor%}
+                          
+                          
+                          </table>
+
+                </p>
+                <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>    
+<!– •	Nombre, apellidos y edad para el mejor vendedor del año –>
+          <div class="card">
+            <div class="card-header">
+            
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                    •	•	Nombre, apellidos y edad para el mejor vendedor del año<br><br>
+                    
+                        <h4>Reporte vendedor del año</h4>
+
+
+                        <table id="Pregunta_3" name="Pregunta_3"  class="table table-striped table-bordered">
+
+                            <tr>
+                          
+                              <th>NOMBRE</th>
+                              <th>APELLIDOS</th>
+                              <th>FECHA NACIMIENTO</th>
+                              <th>edad</th>
+                              <th>ID CARGO</th>
+                              <th>VENTAS</th>
+                          
+                          
+                            </tr>
+                          
+                            <tr>
+                                {% for vendedors in vendedor %}
+                              <td>{{vendedors.NOMBRE}}</td>
+                              <td>{{vendedors.APELLIDOS}}</td>
+                              <td>{{vendedors.FECHA_NACIMIENTO}}</td>
+                              <td>{{vendedors.edad}}</td>
+                              <td>{{vendedors.ID_CARGO}}</td>
+                              <td>{{vendedors.VENTAS}}</td>
+                          
+                            
+                          
+                            </tr>
+                          
+                          
+                            {% endfor%}
+                          
+                          
+                          </table>
+
+                </p>
+                <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>    
+<!– •	Cantidad de llamadas realizadas por cada mes a partir de 01/06/2022 para 
+el mejor vendedor del año, con el siguiente encabezado: 
+ID_USUARIO, NOMBRE_APELLIDOS, EMAL, CARGO, SALARIO, MES, CANTIDAD DE LLAMADAS –>
+          <div class="card">
+            <div class="card-header">
+            
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                    •	Cantidad de llamadas realizadas por cada mes a partir de 01/06/2022 para 
+                    el mejor vendedor del año, con el siguiente encabezado: 
+                    ID_USUARIO, NOMBRE_APELLIDOS, EMAL, CARGO, SALARIO, MES, CANTIDAD DE LLAMADAS<br><br>
+                    
+                        <h4>Reporte vendedor del a partir de 01/06/2022</h4>
+
+
+                        <table id="Pregunta_4" name="Pregunta_4"  class="table table-striped table-bordered">
+
+                            <tr>
+                          
+                              <th>ID_USUARIO</th>
+                              <th>NOMBRE_APELLIDOS</th>
+                              <th>EMAL</th>
+                              <th>CARGO</th>
+                              <th>AÑO</th>
+                              <th>MES</th>
+                              <th>SALARIO</th>
+                              <th>CANTIDAD DE LLAMADAS</th>
+                          
+                          
+                            </tr>
+                          
+                            <tr>
+                                {% for ventas in venta %}
+                              <td>{{ventas.ID_USUARIO}}</td>
+                              <td>{{ventas.NOMBRE_APELLIDOS}}</td>
+                              <td>{{ventas.EMAL}}</td>
+                              <td>{{ventas.CARGO}}</td>
+                              <td>{{ventas.AÑO}}</td>
+                              <td>{{ventas.MES}}</td>
+                              <td>{{ventas.SALARIO}}</td>
+                              <td>{{ventas.CANTIDAD_DE_LLAMADAS}}</td>
+                          
+                            
+                          
+                            </tr>
+                          
+                          
+                            {% endfor%}
+                          
+                          
+                          </table>
+
+                </p>
+                <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>    
+
+<!– •		Generar el salario a pagar a cada asesor para el mes de agosto, 
+donde cada llamada aprobada tiene una bonificación del 0.01% sobre su
+sueldo básico –>
+                    <div class="card">
+                      <div class="card-header">
+                      
+                      </div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>
+                              •	•		Generar el salario a pagar a cada asesor para el mes de agosto, 
+                              donde cada llamada aprobada tiene una bonificación del 0.01% sobre su
+                              sueldo básico <br><br>
+                              
+                                  <h4>Reporte de comision por vendedor </h4>
+          
+          
+                                  <table id="Pregunta_5" name="Pregunta_5"  class="table table-striped table-bordered">
+          
+                                      <tr>
+                                    
+                                        <th>ID_USUARIO</th>
+                                        <th>NOMBRE_APELLIDOS</th>
+                                        <th>ID_CARGO</th>
+                                        <th>MES</th>
+                                        <th>AÑO</th>
+                                        <th>SALARIO</th>
+                                        <th>VENTAS</th>
+                                        <th>COMISION</th>
+
+            
+                                      </tr>
+                                    
+                                      <tr>
+                                          {% for Comisions in Comision %}
+                                        <td>{{Comisions.ID_USUARIO}}</td>
+                                        <td>{{Comisions.NOMBRE_APELLIDOS}}</td>
+                                        <td>{{Comisions.ID_CARGO}}</td>
+                                        <td>{{Comisions.MES}}</td>
+                                        <td>{{Comisions.AÑO}}</td>
+                                        <td>{{Comisions.SALARIO}}</td>
+                                        <td>{{Comisions.VENTAS}}</td>
+                                        <td>{{Comisions.COMISION}}</td>
+                                    
+                                        
+                                    
+                                      </tr>
+                                    
+                                    
+                                      {% endfor%}
+                                    
+                                    
+                                    </table>
+          
+                          </p>
+                          <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+                        </blockquote>
+                      </div>
+                    </div>    
+    {% endblock  %}
+

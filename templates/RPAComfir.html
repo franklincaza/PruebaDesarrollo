@@ -1,0 +1,64 @@
+{%extends 'base.html' %}
+{% block title %} 2.	PRUEBA DE BASE DE DATOS {% endblock  %}
+{% block content %}
+
+   
+
+<!– • bOTS rpa–>
+          <div class="card">
+            <div class="card-header">
+                RPA Bots exitosa
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  <img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2022/07/robot-aprende-imaginarse-mismo-2758883.jpg?tf=3840x" class="img-fluid" width="10%" height="10%" >
+                  <br>
+                          Ejecucion exitosa
+                
+                     <br>
+
+                     <table id="rpa" name="rpa"  class="table table-striped table-bordered">
+
+                      <tr>
+                    
+                        <th>Fecha_ejecucion</th>
+                    
+                        <th>Lauch_Bot</th>
+                        <th>Name_Bots</th>
+                    
+                    
+                      </tr>
+                    
+                      <tr>
+                          {% for rpas in rpa %}
+                        <td>{{rpas.Fecha_ejecucion}}</td>
+                        <td>{{rpas.Lauch_Bot}}</td>
+                        <td>{{rpas.Name_Bots}}</td>
+                    
+                      
+                    
+                      </tr>
+                    
+                     
+                      {% endfor%}
+                    
+                    
+                    </table>
+
+            
+                  
+                 
+                    
+                    
+
+
+
+                </p>
+                <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>          
+ 
+    {% endblock  %}
+
